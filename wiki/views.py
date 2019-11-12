@@ -34,7 +34,7 @@ class PageDetailView(DetailView):
 
     def get(self, request, slug):
         """ Returns a specific of wiki page by slug. """
-        page = self.get_queryset().get(slug_iexact = slug)
+        page = self.get_queryset().get(slug = slug)
         return render(request, 'page.html', { 'page': page })
 
     def post(self, request, slug):
