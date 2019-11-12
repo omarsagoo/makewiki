@@ -17,9 +17,7 @@ class PageListView(ListView):
 
 class PageDetailView(DetailView):
     """
-    CHALLENGES:
-      1. On GET, render a template named `page.html`.
-      2. Replace this docstring with a description of what thos accomplishes.
+    GET one page and view it.
 
     STRETCH CHALLENGES:
       1. Import the PageForm class from forms.py.
