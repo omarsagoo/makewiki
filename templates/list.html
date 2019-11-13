@@ -2,8 +2,15 @@
 
 {% block content %}
     {% for page in pages %}
-        <p>
-            <a href="{{ page.slug }}">{{ page.title }}</a>
-        </p>
+       
+    <a href="{{ page.slug }}">
+        <div class="card" style="width: 18rem;" >
+                <div class="card-body">
+                  <h5 class="card-title">{{ page.title }}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{ page.author }}</h6>
+                </div>
+        </div>
+    </a>
+
     {% endfor %}
 {% endblock %}
